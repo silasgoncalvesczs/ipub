@@ -22,7 +22,9 @@
     <nav class="navbar" id="navbar">
         <div class="container nav-container">
             <div class="logo">
-                <span class="logo-text">IPUB <span class="logo-detail">Brasil</span></span>
+                <a href="#home">
+                    <span class="logo-text">IPUB <span class="logo-detail">Brasil</span></span>
+                </a>
             </div>
             <ul class="nav-links">
                 <li><a href="#home">Início</a></li>
@@ -205,6 +207,53 @@
         </div>
     </section>
 
+    <section id="contato" class="contact-section">
+        <div class="container contact-container">
+            <div class="contact-text">
+                <h2 class="section-title">Entre em <span class="text-blue">Contato</span></h2>
+                <p>Tem alguma dúvida ou pedido de oração? Preencha o formulário abaixo e nossa equipe entrará em contato
+                    com você.</p>
+
+                <div class="contact-details">
+                    <div class="detail-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>contato@ipubbrasil.com.br</span>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <span>(00) 1234-5678</span>
+                    </div>
+                </div>
+            </div>
+
+            <form class="contact-form" action="https://formspree.io/f/SEU_CODIGO_AQUI" method="POST">
+                <div class="form-group">
+                    <label for="nome">Nome Completo</label>
+                    <input type="text" name="nome" id="nome" placeholder="Seu nome" required>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" name="email" id="email" placeholder="seu@email.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="telefone">Telefone / WhatsApp</label>
+                        <input type="tel" name="telefone" id="telefone" placeholder="(00) 00000-0000">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="mensagem">Sua Mensagem ou Pedido de Oração</label>
+                    <textarea name="mensagem" id="mensagem" rows="5" placeholder="Escreva aqui..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-dark" style="width: 100%; border: none; cursor: pointer;">Enviar
+                    Mensagem</button>
+            </form>
+        </div>
+    </section>
+
     <section class="icon-strip">
         <div class="container strip-grid">
             <div class="strip-item">
@@ -226,7 +275,7 @@
         </div>
     </section>
 
-    <footer id="contato">
+    <footer>
         <div class="container footer-content">
             <div class="footer-logo">
                 <img src="./assets/ipub_logo.png" alt="Logo IPUB" class="ipub-logo-img">
@@ -252,7 +301,7 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2024 IPUB. Todos os direitos reservados.</p>
+            <p>© 2024 IPUB. Todos os direitos reservados.</p>
         </div>
     </footer>
 
