@@ -1,7 +1,9 @@
 /* --- Variáveis de Cores (Identidade Visual) --- */
 :root {
-    --primary-blue: #0A2342; /* Azul Marinho Profundo (Moderno) */
-    --accent-red: #D32F2F;   /* Vermelho Cereja (Destaque) */
+    --primary-blue: #0A2342;
+    /* Azul Marinho Profundo */
+    --accent-red: #D32F2F;
+    /* Vermelho Cereja */
     --text-dark: #333333;
     --text-light: #f4f4f4;
     --white: #ffffff;
@@ -40,6 +42,30 @@ ul {
     padding: 0 20px;
 }
 
+/* Utilitários */
+.text-center {
+    text-align: center;
+}
+
+.text-blue {
+    color: var(--primary-blue);
+}
+
+.section-title {
+    font-family: var(--font-heading);
+    font-size: 2.5rem;
+    color: var(--primary-blue);
+    margin-bottom: 20px;
+}
+
+.section-subtitle {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #666;
+    font-size: 1.1rem;
+    margin-top: -10px;
+}
+
 /* --- Navegação (Navbar) --- */
 .navbar {
     position: fixed;
@@ -51,11 +77,10 @@ ul {
     transition: all 0.4s ease;
 }
 
-/* Classe adicionada via JS ao rolar a página */
 .navbar.scrolled {
     background-color: var(--primary-blue);
     padding: 15px 0;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
 
 .nav-container {
@@ -73,7 +98,7 @@ ul {
 }
 
 .logo-detail {
-    color: var(--accent-red); /* Detalhe vermelho */
+    color: var(--accent-red);
 }
 
 .nav-links {
@@ -115,7 +140,8 @@ ul {
 /* --- Hero Section --- */
 .hero {
     height: 100vh;
-    background-image: url('https://images.unsplash.com/photo-1548625361-9872e45440ad?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80'); /* Foto de igreja moderna */
+    /* Usando link direto da internet para garantir que carregue */
+    background-image: url('./assets/min-louvor.jpg');
     background-size: cover;
     background-position: center;
     position: relative;
@@ -132,7 +158,7 @@ ul {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(10, 35, 66, 0.4); /* Filtro azul escuro transparente */
+    background: rgba(10, 35, 66, 0.4);
 }
 
 .hero-content {
@@ -148,7 +174,7 @@ ul {
     color: var(--white);
     margin-bottom: -10px;
     font-weight: 400;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .hero h1 {
@@ -157,7 +183,7 @@ ul {
     text-transform: uppercase;
     letter-spacing: 2px;
     margin-bottom: 20px;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .hero p {
@@ -207,7 +233,7 @@ ul {
 .cards-section {
     padding: 80px 0;
     background-color: var(--white);
-    margin-top: -50px; /* Sobrepor levemente o Hero */
+    margin-top: -50px;
     position: relative;
     z-index: 10;
 }
@@ -223,7 +249,7 @@ ul {
     padding: 40px 20px;
     text-align: center;
     border-radius: 8px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
     transition: transform 0.3s ease;
     border-bottom: 3px solid transparent;
 }
@@ -260,17 +286,6 @@ ul {
     flex: 1;
 }
 
-.section-title {
-    font-family: var(--font-heading);
-    font-size: 2.5rem;
-    color: var(--primary-blue);
-    margin-bottom: 20px;
-}
-
-.text-blue {
-    color: var(--primary-blue); /* Se quiser destaque azul */
-}
-
 .about-text p {
     margin-bottom: 20px;
     color: #666;
@@ -283,12 +298,167 @@ ul {
 .about-image img {
     width: 100%;
     border-radius: 8px;
-    box-shadow: 10px 10px 0px var(--primary-blue); /* Detalhe moderno */
+    box-shadow: 10px 10px 0px var(--primary-blue);
 }
 
-/* --- Icon Strip (Estilo Footer do site referência) --- */
+/* --- Ministérios (Conecte-se) --- */
+.ministries-section {
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+.ministries-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.ministry-card {
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    padding: 20px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.ministry-card:hover {
+    transform: scale(1.02);
+}
+
+.ministry-content {
+    color: var(--white);
+    z-index: 2;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+.ministry-content h3 {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    color: var(--white);
+    border-bottom: 3px solid var(--accent-red);
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+/* --- Crenças --- */
+.beliefs-section {
+    padding: 80px 0;
+    background-color: #f4f4f4;
+}
+
+.beliefs-list {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+
+.beliefs-list li {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.beliefs-list i {
+    font-size: 2rem;
+    color: var(--accent-red);
+    margin-top: 5px;
+}
+
+.beliefs-list strong {
+    display: block;
+    font-size: 1.2rem;
+    color: var(--primary-blue);
+    margin-bottom: 5px;
+    font-family: var(--font-heading);
+}
+
+/* --- Planeje sua Visita --- */
+.visit-section {
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+.visit-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-top: 40px;
+    align-items: center;
+}
+
+.visit-info {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.info-item {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.info-item i {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(10, 35, 66, 0.1);
+    color: var(--primary-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    flex-shrink: 0;
+}
+
+.info-item h4 {
+    font-family: var(--font-heading);
+    color: var(--primary-blue);
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.info-item p {
+    color: #555;
+    font-size: 0.95rem;
+    margin-bottom: 5px;
+}
+
+.link-highlight {
+    color: var(--accent-red);
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+
+.link-highlight:hover {
+    color: var(--primary-blue);
+    text-decoration: underline;
+}
+
+.map-container {
+    height: 400px;
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border: 5px solid white;
+}
+
+/* --- Icon Strip --- */
 .icon-strip {
-    background-color: var(--primary-blue); /* Substituindo o preto da referência pelo azul da IPUB */
+    background-color: var(--primary-blue);
     padding: 60px 0;
     color: white;
 }
@@ -311,7 +481,6 @@ ul {
 
 .strip-item i {
     font-size: 3rem;
-    /* Ícones apenas contorno (outline) para ficar clean */
 }
 
 .strip-item span {
@@ -326,7 +495,7 @@ footer {
     background-color: #f4f4f4;
     padding: 60px 0 20px;
     color: #333;
-    text-align: center; /* Centralizado para mobile, ajusta com flex depois */
+    text-align: center;
 }
 
 .footer-content {
@@ -339,11 +508,12 @@ footer {
 }
 
 .ipub-logo-img {
-    max-width: 150px; /* Ajuste o tamanho do logo aqui */
+    max-width: 150px;
     margin-bottom: 15px;
 }
 
-.footer-links h4, .footer-contact h4 {
+.footer-links h4,
+.footer-contact h4 {
     color: var(--primary-blue);
     margin-bottom: 20px;
     font-family: var(--font-heading);
@@ -371,10 +541,10 @@ footer {
     color: #777;
 }
 
-/* --- Responsividade (Mobile) --- */
+/* --- Responsividade --- */
 @media (max-width: 768px) {
     .nav-links {
-        display: none; /* Esconder menu desktop */
+        display: none;
         position: absolute;
         top: 70px;
         right: 0;
@@ -405,7 +575,35 @@ footer {
         flex-direction: column;
     }
 
+    /* Ajuste para Crenças no mobile */
+    .beliefs-list {
+        grid-template-columns: 1fr;
+    }
+
+    /* Ajuste para Visita no mobile */
+    .visit-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .map-container {
+        height: 300px;
+        order: -1;
+        /* Mapa acima do texto no celular */
+    }
+
     .footer-content {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+}
+
+@media (min-width: 769px) {
+    .beliefs-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .beliefs-list li {
         flex-direction: column;
         text-align: center;
         align-items: center;

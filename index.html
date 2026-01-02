@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IPUB - O Evangelho Completo</title>
-    
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <nav class="navbar" id="navbar">
@@ -24,6 +28,7 @@
                 <li><a href="#home">Início</a></li>
                 <li><a href="#sobre">Sobre Nós</a></li>
                 <li><a href="#conecte">Conecte-se</a></li>
+                <li><a href="#visit">Visite</a></li>
                 <li><a href="#contato">Contato</a></li>
                 <li><a href="#" class="btn-nav">Assista ao Vivo</a></li>
             </ul>
@@ -70,12 +75,132 @@
         <div class="container about-container">
             <div class="about-text">
                 <h2 class="section-title">Nossa <span class="text-blue">Missão</span></h2>
-                <p>Somos uma igreja apaixonada por Deus e por pessoas. Nosso desejo é levar o evangelho completo a todo o mundo, começando pela nossa comunidade.</p>
-                <p>Acreditamos no poder transformador do Espírito Santo e na restauração de vidas através da Palavra.</p>
+                <p>Somos uma igreja apaixonada por Deus e por pessoas. Nosso desejo é levar o evangelho completo a todo
+                    o mundo, começando pela nossa comunidade.</p>
+                <p>Acreditamos no poder transformador do Espírito Santo e na restauração de vidas através da Palavra.
+                </p>
                 <a href="#" class="btn btn-dark">Saiba Mais</a>
             </div>
             <div class="about-image">
-                <img src="https://images.unsplash.com/photo-1438232992991-995b7058bbb3?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Pessoas na igreja">
+                <img src="./assets/sobre-nos.jpg" alt="Pessoas na igreja">
+            </div>
+        </div>
+    </section>
+
+    <section id="conecte" class="ministries-section">
+        <div class="container">
+            <h2 class="section-title text-center">Conecte-se aos <span class="text-blue">Ministérios</span></h2>
+            <p class="section-subtitle">Há um lugar para você servir e crescer.</p>
+
+            <div class="ministries-grid">
+                <div class="ministry-card"
+                    style="background-image: linear-gradient(rgba(10,35,66,0.7), rgba(10,35,66,0.7)), url('./assets/min-jovens.jpg');">
+                    <div class="ministry-content">
+                        <h3>Jovens</h3>
+                        <p>Força e vigor para transformar a geração.</p>
+                    </div>
+                </div>
+                <div class="ministry-card"
+                    style="background-image: linear-gradient(rgba(10,35,66,0.7), rgba(10,35,66,0.7)), url('./assets/min-criancas.jpg');">
+                    <div class="ministry-content">
+                        <h3>Crianças</h3>
+                        <p>Ensinando o caminho desde cedo.</p>
+                    </div>
+                </div>
+                <div class="ministry-card"
+                    style="background-image: linear-gradient(rgba(10,35,66,0.7), rgba(10,35,66,0.7)), url('./assets/min-louvor.jpg');">
+                    <div class="ministry-content">
+                        <h3>Louvor</h3>
+                        <p>Adoração genuína em espírito e verdade.</p>
+                    </div>
+                </div>
+                <div class="ministry-card"
+                    style="background-image: linear-gradient(rgba(10,35,66,0.7), rgba(10,35,66,0.7)), url('./assets/min-senhoras.jpg');">
+                    <div class="ministry-content">
+                        <h3>Senhoras</h3>
+                        <p>Mulheres de oração e serviço.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="crencas" class="beliefs-section">
+        <div class="container">
+            <div class="beliefs-content">
+                <h2 class="section-title text-center">No que <span class="text-blue">Cremos</span></h2>
+                <ul class="beliefs-list">
+                    <li>
+                        <i class="fas fa-bible"></i>
+                        <div>
+                            <strong>A Bíblia</strong>
+                            <p>Acreditamos que a Bíblia é a Palavra inspirada de Deus, a única autoridade infalível.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fas fa-praying-hands"></i>
+                        <div>
+                            <strong>Um Só Deus</strong>
+                            <p>Cremos em um único Deus, manifestado em carne como Jesus Cristo.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fas fa-water"></i>
+                        <div>
+                            <strong>Salvação</strong>
+                            <p>Arrependimento, batismo em nome de Jesus e o dom do Espírito Santo.</p>
+                        </div>
+                    </li>
+                </ul>
+                <div class="text-center" style="margin-top: 30px;">
+                    <a href="#" class="btn btn-primary">Ler Declaração de Fé</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="visit" class="visit-section">
+        <div class="container">
+            <h2 class="section-title text-center">Planeje sua <span class="text-blue">Visita</span></h2>
+            <p class="section-subtitle">Estamos ansiosos para receber você e sua família.</p>
+
+            <div class="visit-grid">
+                <div class="visit-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Endereço</h4>
+                            <p>Rua Exemplo, 123 - Centro<br>Sua Cidade, Estado</p>
+                            <a href="https://maps.app.goo.gl/hn7JVjVGRJ7DFYVg7" target="_blank"
+                                class="link-highlight">Ver no Google Maps
+                                →</a>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Horários de Culto</h4>
+                            <p><strong>Domingo:</strong> 19h (Culto da Família)</p>
+                            <p><strong>Quinta-feira:</strong> 19h30 (Ensino Bíblico)</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <i class="fas fa-car"></i>
+                        <div>
+                            <h4>Estacionamento</h4>
+                            <p>Dispomos de estacionamento gratuito para visitantes na lateral da igreja.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="map-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d245.60135431400656!2d-67.83262835203334!3d-9.965401259397234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x917f8c47f1295527%3A0x5968d09822c3166e!2sR.%20Sen.%20Kairala%2C%2069%20-%20Esta%C3%A7%C3%A3o%20Experimental%2C%20Rio%20Branco%20-%20AC%2C%2069918-198!5e0!3m2!1spt-BR!2sbr!4v1767379868659!5m2!1spt-BR!2sbr"
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
+                    </iframe>
+                </div>
             </div>
         </div>
     </section>
@@ -104,15 +229,15 @@
     <footer id="contato">
         <div class="container footer-content">
             <div class="footer-logo">
-                <img src="./assets/ipub_logo.png" alt="Logo IPUB Original" class="ipub-logo-img">
+                <img src="./assets/ipub_logo.png" alt="Logo IPUB" class="ipub-logo-img">
                 <p>O Evangelho Completo para o Mundo Inteiro.</p>
             </div>
             <div class="footer-links">
                 <h4>Navegação</h4>
                 <ul>
-                    <li><a href="#">Início</a></li>
-                    <li><a href="#">Sobre</a></li>
-                    <li><a href="#">Ministérios</a></li>
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#conecte">Ministérios</a></li>
                 </ul>
             </div>
             <div class="footer-contact">
@@ -133,4 +258,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>
